@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Пекарский](https://up.htmlacademy.ru/adaptive/15/user/387003).
-* Наставник: [Удовенко Марина] (https://htmlacademy.ru/profile/id7570).
+* Наставник: [Удовенко Марина].
 
 ---
 
