@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Form</title>
   </head>
   <body>
 
@@ -43,14 +43,15 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="page-form__personal-information-box">
               <fieldset class="page-form__form">
-                <label for="surname">Фамилия:</label>
-                <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
 
-                <label for="firstname">Имя:</label>
-                <input type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+                <label class="page-form__label surname-label" for="surname">Фамилия:</label>
+                <input class="page-form__input surname-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
 
-                <label for="patronymic">Отчество:</label>
-                <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                <label class="page-form__label name-label" for="firstname">Имя:</label>
+                <input class="page-form__input name-input" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+
+                <label class="page-form__label patronymic-label" for="patronymic">Отчество:</label>
+                <input class="page-form__input patronymic-input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
               </fieldset>
             </div>
 
@@ -60,32 +61,35 @@
                 <ul class="page-form__achievements-list achievements-list">
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Сделал селфи с акулой</label>
-                    <input class="achievements-list__checkbox" type="checkbox" name="silfie" id="selfie" checked>
+                    <label class="achievements-list__label" for="selfie">Сделал селфи с акулой</label>
+
+                    <!--Тут правильно добавлен модификатор для элементов которые сразу с отметкой? -->
+
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="silfie" id="selfie" checked>
                   </li>
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Обгорел на пляже</label>
-                    <input class="achievements-list__checkbox" type="checkbox" name="burned" id="burned" checked>
+                    <label class="achievements-list__label" for="selfie">Обгорел на пляже</label>
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="burned" id="burned" checked>
                   </li>
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Видел Чака Норриса</label>
+                    <label class="achievements-list__label" for="selfie">Видел Чака Норриса</label>
                     <input class="achievements-list__checkbox" type="checkbox" name="see-chuck" id="see-chuck">
                   </li>
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Накупил сувениров</label>
+                    <label class="achievements-list__label" for="selfie">Накупил сувениров</label>
                     <input class="achievements-list__checkbox" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
                   </li>
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Удержал башню</label>
-                    <input class="achievements-list__checkbox" type="checkbox" name="tower" id="tower" checked>
+                    <label class="achievements-list__label" for="selfie">Удержал башню</label>
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="tower" id="tower" checked>
                   </li>
 
                   <li class="achievements-list__item">
-                    <label for="selfie">Разгромил отель</label>
+                    <label class="achievements-list__label" for="selfie">Разгромил отель</label>
                     <input class="achievements-list__checkbox" type="checkbox" name="rout-hotel" id="rout-hotel">
                   </li>
                 </ul>
@@ -94,11 +98,11 @@
 
             <div class="page-form__contact-info-box">
               <fieldset class="page-form__form">
-                <label for="mobile">Номер телефона</label>
-                <input class="page-form__mobile-phone" type="text" id="mobile" name="mobile" placeholder="Номер, пожалуйста">
+                <label class="page-form__label" for="mobile">Номер телефона</label>
+                <input class="page-form__input page-form__mobile-phone" type="text" id="mobile" name="mobile" placeholder="Номер, пожалуйста">
 
-                <label for="email">Адрес почты</label>
-                <input class="page-form__email" type="text" id="email" name="email" placeholder="Введите почту*">
+                <label class="page-form__label" for="email">Адрес почты</label>
+                <input class="page-form__input page-form__email" type="text" id="email" name="email" placeholder="Введите почту*">
               </fieldset>
             </div>
 
@@ -108,18 +112,18 @@
 
                 <ul class="page-form__app-list">
                   <li class="page-form__app-item">
-                    <input class="page-form__app-radio" id="iOS-pink" type="radio" name="application" value="iOS" checked>
-                    <label for="iOS-pink">Pink для iOS</label>
+                    <input class="page-form__radio app-ios" id="iOS-pink" type="radio" name="application" value="iOS" checked>
+                    <label class="page-form__label" for="iOS-pink">Pink для iOS</label>
                   </li>
 
                   <li class="page-form__app-item">
-                    <input class="page-form__app-radio" id="Android-pink" type="radio" name="application" value="Android">
-                    <label for="Android-pink">Pink на Android</label>
+                    <input class="page-form__radio app-android" id="android-pink" type="radio" name="application" value="Android">
+                    <label class="page-form__label" for="Android-pink">Pink на Android</label>
                   </li>
 
                   <li class="page-form__app-item">
-                    <input class="page-form__app-radio" id="Windows-pink" type="radio" name="application" value="Windows">
-                    <label for="Windows-pink">Windows Phone</label>
+                    <input class="page-form__radio app-windows" id="windows-pink" type="radio" name="application" value="Windows">
+                    <label class="page-form__label" for="Windows-pink">Windows Phone</label>
                   </li>
                 </ul>
               </fieldset>
@@ -141,7 +145,7 @@
       </div>
     </main>
 
-<footer class="photo-footer">
+    <footer class="photo-footer">
       <div class="photo-footer__wrapper">
         <a href="index.html" class="photo-footer__logo-link">
           <img src="http://placehold.it/150x100" width="150" height="45" class="photo-footer__img-logo" alt="Логотип приложения pink">

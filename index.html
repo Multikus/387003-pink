@@ -32,24 +32,33 @@
       </nav>
 
       <img src="http://placehold.it/150x100" class="page-header__image" width="320" height="462" alt="Фотография в шапке сайта">
-      <div class="action-link-wrapper">
+      <div class="action-list wrapper-list">
         <a href="#" class="action-link-wrapper__download-button">Скачать приложение</a>
-        <div class="action-link-wrapper__platform-link">
-                <!--Класс для ссылки задан правильно-->
-              <a href="#" class="platform-link__apple-button">
-                <img src="http://placehold.it/150x100" class="platform-link__apple-image" width="47" height="56" alt="Логотип компании Apple">
-              </a>
-              <a href="#" class="platform-link__android-button">
-                <img src="http://placehold.it/150x100" class="platform-link__android-image" width="43" height="47" alt="Логотип мобильной операционной системы andriod">
-              </a>
-              <a href="#" class="platform-link__windows-button">
-                <img src="http://placehold.it/150x100" class="platform-link__windows-image" width="44" height="41" alt="Логотип операционной системы windows">
-              </a>
-              <p class="platform-link__description">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </p>
-          </div>
-        </div>
+        <ul class="action-list__platform platform-list">
+
+           <li class="platform-list__item">
+            <a href="#" class="platform-list__item platform-list__item--apple-button">
+              <img src="http://placehold.it/150x100" class="platform-list__item-apple-image" width="47" height="56" alt="Логотип компании Apple">
+            </a>
+          </li>
+
+          <li class="platform-list__item">
+            <a href="#" class="platform-list__item platform-list__item--android-button">
+              <img src="http://placehold.it/150x100" class="platform-list__android-image" width="43" height="47" alt="Логотип мобильной операционной системы andriod">
+            </a>
+          </li>
+
+          <li class="platform-list__item">
+            <a href="#" class="platform-list__item platform-list__item--windows-button">
+              <img src="http://placehold.it/150x100" class="platform-list__windows-image" width="44" height="41" alt="Логотип операционной системы windows">
+            </a>
+          </li>
+        </ul>
+
+        <p class="action-list__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
     </header>
 
     <main class="page-main">
@@ -58,22 +67,24 @@
         <p class="promo-questions__item">Нам есть, что вам предложить!</p>
       </section>
       <section class="features">
+
         <ul class="features__list">
+
           <li class="features__item">
-            <h2 class="features__item--title">Поднимает настроение</h2>
-            <p class="features__item--description">
+            <h2 class="features__item-title">Поднимает настроение</h2>
+            <p class="features__item-description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="features__item">
-            <h2 class="features__item--title">Меняет мир вокруг</h2>
-            <p class="features__item--description">
+            <h2 class="features__item-title">Меняет мир вокруг</h2>
+            <p class="features__item-description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="features__item">
-            <h2 class="features__item--title">Заводит новых друзей</h2>
-            <p class="features__item--description">
+            <h2 class="features__item-title">Заводит новых друзей</h2>
+            <p class="features__item-description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -88,7 +99,7 @@
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </p>
         <div class="review-slider">
-          <input class="review-slider__slider-radio visually-hidden" type="radio" id="review-slider-1" name="review-toggle" checked>
+          <input class="review-slider__slider-radio--check visually-hidden" type="radio" id="review-slider-1" name="review-toggle" checked>
           <input class="review-slider__slider-radio visually-hidden" type="radio" id="review-slider-2" name="review-toggle">
           <input class="review-slider__slider-radio visually-hidden" type="radio" id="review-slider-3" name="review-toggle">
           <ul class="review-slider__switches">
@@ -116,7 +127,7 @@
         </ul>
         <div class="price-slider">
           <input class="price-slider__slider-radio visually-hidden" type="radio" id="price-slider-1" name="price-toggle">
-          <input class="price-slider__slider-radio visually-hidden" type="radio" id="price-slider-2" name="price-toggle" checked>
+          <input class="price-slider__slider-radio--check visually-hidden" type="radio" id="price-slider-2" name="price-toggle" checked>
           <input class="price-slider__slider-radio visually-hidden" type="radio" id="price-slider-3" name="price-toggle">
           <ul class="review-slider__switches">
             <li>
@@ -137,16 +148,16 @@
       <div class="page-footer__contacts contacts">
         <h3 class="contacts__title">Остались вопросы? Свяжитес с нами!</h3>
         <p class="contacts__phone">
-          <span class="contacts__phone--title">Звоните:</span>
-          <a href="tel:+78125556666" class="contacts__phone--mobile">+7 (812) 555-66-66</a>
+          <span class="contacts__phone-title">Звоните:</span>
+          <a href="tel:+78125556666" class="contacts__phone-mobile">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__mail">
-          <span class="contacts__mail--title">Пишите:</span>
+          <span class="contacts__mail-title">Пишите:</span>
           <span class="contacts__e-mail">mail@htmlacademy.ru</span>
         </p>
         <p class="contacts__adress">
           <span class="contacts__adress-title">Приезжайте в гости:</span>
-          <span class="contacts__adress--street">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__adress-street">ул. Большая Конюшенная, 19/8</span>
         </p>
       </div>
       <p class="contact-map">
