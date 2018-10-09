@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <h1 class="visually-hidden">Pink</h1>
+      <a href="#" class="page-header__logo-link">
+        <img src="http://placehold.it/150x100" class="page-header__logo-image" alt="Логотип сайта pink" width="75" height="25">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+              </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="page-header__header-box-img">
+        <h1 class="photo_title">Конкурс на самое безбашенное путешестие с Пинк</h1>
+      </div>
+    </header>
+
+    <main class="page-form">
+      <div class="page-form__wrapper">
+        <h2 class="page-form__title">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="page-form__personal-information-box">
+              <fieldset class="page-form__form">
+
+                <label class="page-form__label surname-label" for="surname">Фамилия:</label>
+                <input class="page-form__input surname-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+
+                <label class="page-form__label name-label" for="firstname">Имя:</label>
+                <input class="page-form__input name-input" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*">
+
+                <label class="page-form__label patronymic-label" for="patronymic">Отчество:</label>
+                <input class="page-form__input patronymic-input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </fieldset>
+            </div>
+
+            <div class="page-form__achievements-box">
+              <fieldset class="page-form__form">
+                <legend>Ваши безбашенные достижения в путешествии</legend>
+                <ul class="page-form__achievements-list achievements-list">
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Сделал селфи с акулой</label>
+
+                    <!--Тут правильно добавлен модификатор для элементов которые сразу с отметкой? -->
+
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="silfie" id="selfie" checked>
+                  </li>
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Обгорел на пляже</label>
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="burned" id="burned" checked>
+                  </li>
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Видел Чака Норриса</label>
+                    <input class="achievements-list__checkbox" type="checkbox" name="see-chuck" id="see-chuck">
+                  </li>
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Накупил сувениров</label>
+                    <input class="achievements-list__checkbox" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
+                  </li>
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Удержал башню</label>
+                    <input class="achievements-list__checkbox achievements-list__checkbox--check" type="checkbox" name="tower" id="tower" checked>
+                  </li>
+
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__label" for="selfie">Разгромил отель</label>
+                    <input class="achievements-list__checkbox" type="checkbox" name="rout-hotel" id="rout-hotel">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="page-form__contact-info-box">
+              <fieldset class="page-form__form">
+                <label class="page-form__label" for="mobile">Номер телефона</label>
+                <input class="page-form__input page-form__mobile-phone" type="text" id="mobile" name="mobile" placeholder="Номер, пожалуйста">
+
+                <label class="page-form__label" for="email">Адрес почты</label>
+                <input class="page-form__input page-form__email" type="text" id="email" name="email" placeholder="Введите почту*">
+              </fieldset>
+            </div>
+
+            <div class="page-form__app-travel-box">
+              <fieldset class="page-form__form">
+                <legend>С каким приложением путешествовали?</legend>
+
+                <ul class="page-form__app-list">
+                  <li class="page-form__app-item">
+                    <input class="page-form__radio app-ios" id="iOS-pink" type="radio" name="application" value="iOS" checked>
+                    <label class="page-form__label" for="iOS-pink">Pink для iOS</label>
+                  </li>
+
+                  <li class="page-form__app-item">
+                    <input class="page-form__radio app-android" id="android-pink" type="radio" name="application" value="Android">
+                    <label class="page-form__label" for="Android-pink">Pink на Android</label>
+                  </li>
+
+                  <li class="page-form__app-item">
+                    <input class="page-form__radio app-windows" id="windows-pink" type="radio" name="application" value="Windows">
+                    <label class="page-form__label" for="Windows-pink">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="page-form__emotion-box">
+              <fieldset class="page-form__form">
+                <legend>Опишите свои эмоции</legend>
+                <label class="visually-hidden" for="subject"></label>
+                <textarea class="page-form__send-message" rows="7" cols="25" id="subject" name="subject" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+            <button class="page-form__button" type="submit" value="Отправить">Отправить форму</button>
+            <p class="page-form__required-fields">
+              <span class="page-form__star">*</span>
+                — обязательные поля
+            </p>
+          </form>
+      </div>
+    </main>
+
+    <footer class="photo-footer">
+      <div class="photo-footer__wrapper">
+        <a href="index.html" class="photo-footer__logo-link">
+          <img src="http://placehold.it/150x100" width="150" height="45" class="photo-footer__img-logo" alt="Логотип приложения pink">
+        </a>
+
+        <ul class="photo-footer__social-list">
+            <li class="photo-footer__social-item">
+              <a class="photo-footer__social-link footer__social-link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="photo-footer__social-item">
+              <a class="photo-footer__social-link footer__social-link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="photo-footer__social-item">
+              <a class="photo-footer__social-link footer__social-link--youtube" href="#">Мы в Ютубе</a>
+            </li>
+          </ul>
+
+        <div class="photo-footer__copyright">
+          <p class="photo-footer__copyright-text">Разработано:</p>
+          <a class="photo-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
