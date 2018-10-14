@@ -38,8 +38,8 @@
         <img src="img/jpg/bg-back-mobile@1x.jpg" class="page-header__image-bg" width="320" height="462" alt="Фотография в шапке сайта">
         <img src="img/png/iphone-hand-mobile@1x.png" class="page-header__image-hand" width="253" height="280" alt="Фотография в шапке сайта">
       </div>
-      <div class="action-list wrapper-list">
-        <a href="#" class="action-link-wrapper__download-button">Скачать приложение</a>
+      <div class="action-list main-nav__wrapper-list">
+        <a href="#" class="action-link-wrapper__download-button button action-list__button--download-link">Скачать приложение</a>
         <ul class="action-list__platform platform-list">
 
             <li class="platform-list__item">
@@ -68,122 +68,128 @@
     </header>
 
     <main class="page-main">
-      <section class="promo-questions">
-        <p class="promo-questions__item">Устали от серости мегаполиса?</p>
-        <p class="promo-questions__item">Нам есть, что вам предложить!</p>
-      </section>
-      <section class="features">
+      <div class="page-main__wrapper-index">
+        <section class="promo-questions">
+          <p class="promo-questions__item">Устали от серости мегаполиса?</p>
+          <p class="promo-questions__item">Нам есть, что вам предложить!</p>
+        </section>
+        <section class="features">
 
-        <ul class="features__list">
-
-          <li class="features__item">
-            <h2 class="features__item-title">Поднимает настроение</h2>
-            <p class="features__item-description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <h2 class="features__item-title">Меняет мир вокруг</h2>
-            <p class="features__item-description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="features__item">
-            <h2 class="features__item-title">Заводит новых друзей</h2>
-            <p class="features__item-description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-          <li class="features__item">
-            <img src="img/png/iphone-screen-mobile@1x.png" class="features__item-image" width="157" height="330" alt="Фотография главного экрана приложения на телефоне">
-          </li>
-        </ul>
-      </section>
-      <section class="review">
-        <h2 class="review__title">Николай Петров</h2>
-        <p class="review__item">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
-        <div class="review-slider">
-          <input class="review-slider__slider-radio--check " type="radio" id="review-slider-1" name="review-toggle" checked>
-          <input class="review-slider__slider-radio " type="radio" id="review-slider-2" name="review-toggle">
-          <input class="review-slider__slider-radio " type="radio" id="review-slider-3" name="review-toggle">
-          <ul class="review-slider__switches">
-            <li>
-              <label for="review-slider-1"></label>
+          <ul class="features__list">
+            <li class="features__item">
+              <h2 class="features__item-title">Поднимает настроение</h2>
+              <p class="features__item-description">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
             </li>
-            <li>
-              <label for="review-slider-2"></label>
+            <li class="features__item">
+              <h2 class="features__item-title">Меняет мир вокруг</h2>
+              <p class="features__item-description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
             </li>
-            <li>
-              <label for="review-slider-3"></label>
+            <li class="features__item">
+              <h2 class="features__item-title">Заводит новых друзей</h2>
+              <p class="features__item-description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="price">
-        <p class="price__header flag">
-          <span class="price__item-header">Стандарт</span>
-          <span class="price__item">3,99 usd</span>
-        </p>
-        <ul class="price__profit-list">
-          <li class="price__profit-item">
-              <svg class="price__profit-item--img-check-mark-top" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path fill="#000000" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
-              Розовый фильтр
-          </li>
-          <li class="price__profit-item">
-              <svg class="price__profit-item--img-check-mark-middle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path fill="#000000" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-              </svg>
-              Смайлики
-          </li>
-          <li class="price__profit-item">
-              <svg class="price__profit-item--img-x" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                <path fill="#000000" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-              </svg>
-              Комментарии
-          </li>
-        </ul>
-        <div class="price-slider">
-          <input class="price-slider__slider-radio" type="radio" id="price-slider-1" name="price-toggle">
-          <input class="price-slider__slider-radio--check" type="radio" id="price-slider-2" name="price-toggle" checked>
-          <input class="price-slider__slider-radio" type="radio" id="price-slider-3" name="price-toggle">
-          <ul class="review-slider__switches">
-            <li>
-              <label for="price-slider-1"></label>
+          <div class="features__box-img">
+              <img src="img/png/iphone-screen-mobile@1x.png" class="features__item-image" width="157" height="330" alt="Фотография главного экрана приложения на телефоне">
+          </div>
+        </section>
+        <section class="review">
+          <h2 class="review__title">Николай Петров</h2>
+          <p class="review__item">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+          <div class="review-slider">
+            <input class="review-slider__slider-radio--check " type="radio" id="review-slider-1" name="review-toggle" checked>
+            <input class="review-slider__slider-radio " type="radio" id="review-slider-2" name="review-toggle">
+            <input class="review-slider__slider-radio " type="radio" id="review-slider-3" name="review-toggle">
+            <ul class="review-slider__switches">
+              <li>
+                <label for="review-slider-1"></label>
+              </li>
+              <li>
+                <label for="review-slider-2"></label>
+              </li>
+              <li>
+                <label for="review-slider-3"></label>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="price">
+          <p class="price__header flag">
+            <span class="price__item-header">Стандарт</span>
+            <span class="price__item">3,99 usd</span>
+          </p>
+          <ul class="price__profit-list">
+            <li class="price__profit-item">
+                <svg class="price__profit-item--img-check-mark-top" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#000000" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                Розовый фильтр
             </li>
-            <li>
-              <label for="price-slider-2"></label>
+            <li class="price__profit-item">
+                <svg class="price__profit-item--img-check-mark-middle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path fill="#000000" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                Смайлики
             </li>
-            <li>
-              <label for="price-slider-3"></label>
+            <li class="price__profit-item">
+                <svg class="price__profit-item--img-x" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34" height="24" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path fill="#000000" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+                Комментарии
             </li>
           </ul>
-        </div>
-      </section>
+          <div class="price-slider">
+            <input class="price-slider__slider-radio" type="radio" id="price-slider-1" name="price-toggle">
+            <input class="price-slider__slider-radio--check" type="radio" id="price-slider-2" name="price-toggle" checked>
+            <input class="price-slider__slider-radio" type="radio" id="price-slider-3" name="price-toggle">
+            <ul class="review-slider__switches">
+              <li>
+                <label for="price-slider-1"></label>
+              </li>
+              <li>
+                <label for="price-slider-2"></label>
+              </li>
+              <li>
+                <label for="price-slider-3"></label>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <h3 class="contacts__title">Остались вопросы? Свяжитес с нами!</h3>
-        <p class="contacts__phone">
-          <span class="contacts__phone-title">Звоните:</span>
-          <a href="tel:+78125556666" class="contacts__phone-mobile">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__mail">
-          <span class="contacts__mail-title">Пишите:</span>
-          <span class="contacts__e-mail">mail@htmlacademy.ru</span>
-        </p>
-        <p class="contacts__adress">
-          <span class="contacts__adress-title">Приезжайте в гости:</span>
-          <span class="contacts__adress-street">ул. Большая Конюшенная, 19/8</span>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <h3 class="contacts__title">Остались вопросы? Свяжитес с нами!</h3>
+          <p class="contacts__phone">
+            <span class="contacts__phone-title">Звоните:</span>
+            <a href="tel:+78125556666" class="contacts__phone-mobile">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__mail">
+            <span class="contacts__mail-title">Пишите:</span>
+            <span class="contacts__e-mail">mail@htmlacademy.ru</span>
+          </p>
+          <p class="contacts__adress">
+            <span class="contacts__adress-title">Приезжайте в гости:</span>
+            <span class="contacts__adress-street">ул. Большая
+              <span class="contacts__adress-street-second">Конюшенная, 19/8</span>
+            </span>
+          </p>
+        </div>
+        <span class="figure"></span>
+        <p class="contact-map">
+          <img class="contact-map__image" src="img/png/bg-map-mobile@1x.png" width="320" height="645" alt="Карта с адресом нашего офиса. ул. Большая Конюшенная д.19/8">
         </p>
       </div>
-      <p class="contact-map">
-        <img class="contact-map__image" src="img/png/bg-map-mobile@1x.png" width="320" height="645" alt="Карта с адресом нашего офиса. ул. Большая Конюшенная д.19/8">
-      </p>
     </footer>
 
   </body>
