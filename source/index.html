@@ -16,52 +16,54 @@
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+      <nav class="page-nav">
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list">
+            <li class="page-nav__item page-nav__item--active">
               <a>Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="page-nav__item">
               <a href="photo.html">Фотографии</a>
               </li>
-            <li class="site-list__item">
+            <li class="page-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="page-nav__item">
               <a href="#">Html Academy</a>
             </li>
             </ul>
         </div>
       </nav>
+
+
       <div class="page-header__img-box">
         <img src="img/jpg/bg-back-mobile@1x.jpg" class="page-header__image-bg" width="320" height="462" alt="Фотография в шапке сайта">
         <img src="img/png/iphone-hand-mobile@1x.png" class="page-header__image-hand" width="253" height="280" alt="Фотография в шапке сайта">
       </div>
-      <div class="action-list main-nav__wrapper-list">
-        <a href="#" class="action-link-wrapper__download-button button action-list__button--download-link">Скачать приложение</a>
-        <ul class="action-list__platform platform-list">
+      <div class="page-header__action-list-box">
+        <a href="#" class="page-header__download-button button page-header__button--download-link">Скачать приложение</a>
+        <ul class="page-list__platform">
 
-            <li class="platform-list__item">
-            <a href="#" class="platform-list__item platform-list__item--apple-button">
-              <img src="img/svg/logo-apple.svg" class="platform-list__item-apple-image" width="47" height="56" alt="Логотип компании Apple">
+            <li class="page-list__item">
+            <a href="#" class="page-list__a-item page-list__a-item--apple-button">
+              <img src="img/svg/logo-apple.svg" class="page-list__a-item-apple-image" width="47" height="56" alt="Логотип компании Apple">
             </a>
           </li>
 
-          <li class="platform-list__item">
-            <a href="#" class="platform-list__item platform-list__item--android-button">
-              <img src="img/svg/logo-android.svg" class="platform-list__android-image" width="43" height="47" alt="Логотип мобильной операционной системы andriod">
+          <li class="page-list__item">
+            <a href="#" class="page-list__a-item page-list__a-item--android-button">
+              <img src="img/svg/logo-android.svg" class="page-list__android-image" width="43" height="47" alt="Логотип мобильной операционной системы andriod">
             </a>
           </li>
 
-          <li class="platform-list__item">
-            <a href="#" class="platform-list__item platform-list__item--windows-button">
-              <img src="img/svg/logo-microsoft.svg" class="platform-list__windows-image" width="44" height="41" alt="Логотип операционной системы windows">
+          <li class="page-list__item">
+            <a href="#" class="page-list__a-item page-list__a-item--windows-button">
+              <img src="img/svg/logo-microsoft.svg" class="page-list__windows-image" width="44" height="41" alt="Логотип операционной системы windows">
             </a>
           </li>
         </ul>
 
-        <p class="action-list__description">
+        <p class="page-list__description">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </div>
@@ -69,6 +71,7 @@
 
     <main class="page-main">
       <div class="page-main__wrapper-index">
+
         <section class="promo-questions">
           <p class="promo-questions__item">Устали от серости мегаполиса?</p>
           <p class="promo-questions__item">Нам есть, что вам предложить!</p>
@@ -152,7 +155,7 @@
             <input class="price-slider__slider-radio" type="radio" id="price-slider-1" name="price-toggle">
             <input class="price-slider__slider-radio--check" type="radio" id="price-slider-2" name="price-toggle" checked>
             <input class="price-slider__slider-radio" type="radio" id="price-slider-3" name="price-toggle">
-            <ul class="review-slider__switches">
+            <ul class="price-slider__switches">
               <li>
                 <label for="price-slider-1"></label>
               </li>
@@ -170,26 +173,27 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <h3 class="contacts__title">Остались вопросы? Свяжитес с нами!</h3>
-          <p class="contacts__phone">
-            <span class="contacts__phone-title">Звоните:</span>
-            <a href="tel:+78125556666" class="contacts__phone-mobile">+7 (812) 555-66-66</a>
+        <div class="page-footer__contacts">
+
+          <h3 class="page-footer__contacts-title">Остались вопросы? Свяжитес с нами!</h3>
+          <p class="page-footer__contacts-phone">
+            <span class="page-footer__contacts-phone-title">Звоните:</span>
+            <a href="tel:+78125556666" class="page-footer__contacts-phone-mobile">+7 (812) 555-66-66</a>
           </p>
-          <p class="contacts__mail">
-            <span class="contacts__mail-title">Пишите:</span>
-            <span class="contacts__e-mail">mail@htmlacademy.ru</span>
+          <p class="page-footer__contacts-mail">
+            <span class="page-footer__contacts-mail-title">Пишите:</span>
+            <span class="page-footer__contacts-e-mail">mail@htmlacademy.ru</span>
           </p>
-          <p class="contacts__adress">
-            <span class="contacts__adress-title">Приезжайте в гости:</span>
-            <span class="contacts__adress-street">ул. Большая
-              <span class="contacts__adress-street-second">Конюшенная, 19/8</span>
+          <p class="page-footer__contacts-adress">
+            <span class="page-footer__contacts-adress-title">Приезжайте в гости:</span>
+            <span class="page-footer__contacts-adress-street">ул. Большая
+              <span class="page-footer__contacts-adress-street-second">Конюшенная, 19/8</span>
             </span>
           </p>
         </div>
         <span class="figure"></span>
-        <p class="contact-map">
-          <img class="contact-map__image" src="img/png/bg-map-mobile@1x.png" width="320" height="645" alt="Карта с адресом нашего офиса. ул. Большая Конюшенная д.19/8">
+        <p class="page-footer__contact-map">
+          <img class="page-footer__map-image" src="img/png/bg-map-mobile@1x.png" width="320" height="645" alt="Карта с адресом нашего офиса. ул. Большая Конюшенная д.19/8">
         </p>
       </div>
     </footer>

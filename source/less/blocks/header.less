@@ -1,4 +1,8 @@
-.main-nav__wrapper-list {
+.page-header {
+  background-color: @dark-blue;
+}
+
+.page-header__action-list-box {
   margin: 0 auto;
   width: 280px;
 }
@@ -10,27 +14,24 @@
   width: 320px;
 }
 
-.site-list__item {
+.page-nav__item {
   text-align: center;
 }
 
 .page-header__logo-box {
+  display: flex;
   padding-top: 20px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
-.page-header {
-  background-color: @dark-blue;
-}
-
-.main-nav__list {
+.page-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.site-list__item a {
+.page-nav__item a {
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -41,7 +42,7 @@
   border-top: 1px solid #485461;
 }
 
-.site-list__item a:last-child {
+.page-nav__item a:last-child {
   border-bottom: 1px solid #000000;
 }
 
@@ -55,13 +56,13 @@
   bottom: 0;
 }
 
-.action-link-wrapper__download-button {
+.page-header__download-button {
   text-decoration: none;
   font-size: 18px;
   color: #ffffff;
 }
 
-.action-list__button--download-link {
+.page-header__button--download-link {
   display: block;
   box-sizing: border-box;
   padding-top: 14px;
@@ -72,13 +73,14 @@
   margin-bottom: 33px;
 }
 
-.action-list__platform {
+.page-list__platform {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.action-list__description {
+.page-list__description {
   color: #ffffff;
   font-size: 14px;
   font-weight: @light-font-weight;
@@ -87,7 +89,7 @@
 
 /*Для страницы фото*/
 
-.photo_title {
+.page__photo-title {
   font-size: 24px;
   font-weight: @light-font-weight;
   color: #ffffff;
@@ -95,7 +97,7 @@
 
 /*Для страницы конкурс*/
 
-.form_title {
+.page__form-title {
   font-size: 24px;
   font-weight: @light-font-weight;
   color: #ffffff;
