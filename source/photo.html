@@ -9,59 +9,69 @@
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Pink</h1>
-      <div class="page-header__logo-box">
-        <a class="page-header__logo-link">
-          <img src="img/svg/logo-pink-white-mobile.svg" class="page-header__logo-image" alt="Логотип сайта pink" width="75" height="25">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="page-nav">
-        <div class="page-nav__wrapper">
-
-          <ul class="page-nav__list">
-            <li class="page-nav__item page-nav__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="page-nav__item">
-              <a>Фотографии</a>
-              </li>
-            <li class="page-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#">Html Academy</a>
-            </li>
-            </ul>
+      <div  class="page-header-wrapper">
+        <h1 class="visually-hidden">Pink</h1>
+        <div class="page-header__logo-box">
+          <a class="page-header__logo-link">
+            <img src="img/svg/logo-pink-white-mobile.svg" class="page-header__logo-image" alt="Логотип сайта pink" width="75" height="25">
+          </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
         </div>
-      </nav>
-      <div class="page-header__header-box-img">
-        <h1 class="page__photo-title">Фотографии пользователей</h1>
+        <nav class="page-nav">
+          <div class="page-nav__wrapper">
+
+            <ul class="page-nav__list">
+              <li class="page-nav__item page-nav__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="page-nav__item">
+                <a>Фотографии</a>
+                </li>
+              <li class="page-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="page-nav__item">
+                <a href="#">Html Academy</a>
+              </li>
+              </ul>
+          </div>
+        </nav>
+        <div class="page-header__header-title-box">
+          <h1 class="page__photo-title">Фотографии пользователей</h1>
+        </div>
       </div>
     </header>
 
     <main class="page-photo">
-      <section class="photo">
-        <div class="photo__wrapper">
-          <p class="photo__description">
-            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-          </p>
+      <div class="photo__photo-description-box">
+        <p class="photo__description">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+      <div class="photo__panoramic-photo-box">
+        <p class="photo__panoramic-photo">
+          <div class="photo__panoramic-flag-box">
+            <span class="photo__panoramic-flag">панорама дня</span>
+          </div>
+          <img src="img/jpg/panorama-mobile@1x.jpg"  class="photo__panoramic-user-photo" width="320" height="137" alt="Панорамное фото с моста">
+          <div class="photo-panoramic__text-box">
+            <span class="photo-panoramic__user-name">Анна</span>
+            <span class="photo-panoramic__time-publish">(5 минут назад)</span>
+            <p class="photo-panoramic__description-publish">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="photo-panoramic__img-heart">
+              <svg class="photo-panoramic__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+              </svg>
+            </span>
+            <span class="photo-panoramic__like">Нравится: 215</span>
+          </div>
+        </p>
+      </div>
+
+      <div class="photo__wrapper">
+        <section class="photo">
 
           <ul class="photo__list">
-            <li class="photo__list-item">
-              <img src="img/jpg/panorama-mobile@1x.jpg"  class="photo-list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="photo-list__text-box">
-                <span class="photo-list__user-name">Анна</span>
-                <span class="photo-list__time-publish">(5 минут назад)</span>
-                <p class="photo-list__description-publish">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="photo-list__img-heart">
-                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
-                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
-                  </svg>
-                </span>
-                <span class="photo-list__like">Нравится: 215</span>
-              </div>
-            </li>
 
             <li class="photo__list-item">
               <img src="img/jpg/photo-car-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография автомобиля">
@@ -153,53 +163,58 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="image-filters">
-        <div class="image-filters__box-title">
-          <h2 class="image-filters__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-        </div>
-        <div class="image-filters__wrapper">
-          <img src="img/jpg/photo-road-mobile@1x.jpg" class="image-filters__example" width="280" height="374" alt="Зимня дорога в лесу" >
-          <div class="image__button-example">
-
-            <button class="image__button-example__alignment" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-              </svg>
-                <span class="visually-hidden">Обрезать фото</span>
-            </button>
-
-            <button class="image__button-example__fill" type="button">
-              <span class="visually-hidden">Цвет фона</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                <rect y="40" width="48" height="3"/>
-              </svg>
-            </button>
-
-            <button class="image__button-example__brightness" type="button">
-              <span class="visually-hidden">Яркость</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-              </svg>
-            </button>
-
-            <fieldset class="image-filters__saturation">
-              <legend></legend>
-              <label class="image-filters__saturation-label" for="saturation"></label>
-              <input class="image-filters__saturation-input" type="range" id="saturation-filter" name="saturation"
-                min="0" max="100">
-            </fieldset>
-            <p class="image-filters__button-box">
-              <button class="image-filters__send button button--pink-send" type="submit">Запостить</button>
-              <button class="image-filters__rest button button--reset" type="reset">Отмена</button>
-            </p>
+          <div class="image-filters__box-title">
+            <h2 class="image-filters__title">Затмите их всех!
+              <span class="image-filters__title--two-string">Выкладывайте все, что накопилось в телефоне!</span>
+            </h2>
           </div>
-        </div>
-      </section>
+          <div class="image-filters__wrapper">
+
+
+            <!--Сдинуть в лево на 1 таб-->
+              <img src="img/jpg/photo-road-mobile@1x.jpg" class="image-filters__example" width="280" height="374" alt="Зимня дорога в лесу" >
+              <div class="image__button-example">
+
+                <button class="image__button-example__alignment" type="button">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                    <span class="visually-hidden">Обрезать фото</span>
+                </button>
+
+                <button class="image__button-example__fill" type="button">
+                  <span class="visually-hidden">Цвет фона</span>
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect y="40" width="48" height="3"/>
+                  </svg>
+                </button>
+
+                <button class="image__button-example__brightness" type="button">
+                  <span class="visually-hidden">Яркость</span>
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </button>
+
+                <fieldset class="image-filters__saturation">
+                  <legend></legend>
+                  <label class="image-filters__saturation-label" for="saturation"></label>
+                  <input class="image-filters__saturation-input" type="range" id="saturation-filter" name="saturation"
+                    min="0" max="100">
+                </fieldset>
+                <p class="image-filters__button-box">
+                  <button class="image-filters__send button button--pink-send" type="submit">Запостить</button>
+                  <button class="image-filters__rest button button--reset" type="reset">Отмена</button>
+                </p>
+              </div><!--сдвинуть-->
+          </div>
+        </section>
     </main>
 
     <footer class="photo-footer">
