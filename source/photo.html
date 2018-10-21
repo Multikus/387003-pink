@@ -2,36 +2,41 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>Foto</title>
   </head>
   <body>
 
     <header class="page-header">
       <h1 class="visually-hidden">Pink</h1>
-      <a href="#" class="page-header__logo-link">
-        <img src="http://placehold.it/150x100" class="page-header__logo-image" alt="Логотип сайта pink" width="75" height="25">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+      <div class="page-header__logo-box">
+        <a class="page-header__logo-link">
+          <img src="img/svg/logo-pink-white-mobile.svg" class="page-header__logo-image" alt="Логотип сайта pink" width="75" height="25">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="page-nav">
+        <div class="page-nav__wrapper">
+
+          <ul class="page-nav__list">
+            <li class="page-nav__item page-nav__item--active">
+              <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+            <li class="page-nav__item">
+              <a>Фотографии</a>
               </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
+            <li class="page-nav__item">
+              <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="page-nav__item">
               <a href="#">Html Academy</a>
             </li>
             </ul>
         </div>
       </nav>
       <div class="page-header__header-box-img">
-        <h1 class="photo_title">Фотографии пользователей</h1>
+        <h1 class="page__photo-title">Фотографии пользователей</h1>
       </div>
     </header>
 
@@ -41,81 +46,110 @@
           <p class="photo__description">
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
-          <ul class="photo__list list">
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Анна</span>
-                <span class="list__time-publish">(5 минут назад)</span>
-                <p class="list__description-publish">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 215</span>
+
+          <ul class="photo__list">
+            <li class="photo__list-item">
+              <img src="img/jpg/panorama-mobile@1x.jpg"  class="photo-list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Анна</span>
+                <span class="photo-list__time-publish">(5 минут назад)</span>
+                <p class="photo-list__description-publish">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 215</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Левон</span>
-                <span class="list__time-publish">(5 часов назад)</span>
-                <p class="list__description-publish">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 356</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-car-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография автомобиля">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Левон</span>
+                <span class="photo-list__time-publish">(5 часов назад)</span>
+                <p class="photo-list__description-publish">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 356</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100" class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Антон</span>
-                <span class="list__time-publish">(12 часов назад)</span>
-                <p class="list__description-publish">Соседи будут рады!</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 666</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-drumset-mobile@1x.jpg" class="photo-list__user-photo" width="280" height="180" alt="Фотография барабанной установоки">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Антон</span>
+                <span class="photo-list__time-publish">(12 часов назад)</span>
+                <p class="photo-list__description-publish">Соседи будут рады!</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 666</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Борис</span>
-                <span class="list__time-publish">(20 часов назад)</span>
-                <p class="list__description-publish">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 215</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-window-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография стеклянной крыши торгового центра">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Борис</span>
+                <span class="photo-list__time-publish">(20 часов назад)</span>
+                <p class="photo-list__description-publish">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 215</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Сергей</span>
-                <span class="list__time-publish">(25 часов назад)</span>
-                <p class="list__description-publish">Самая кубанская в мире!</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 4</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-fair-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография сельскохозяйственной ярмарки">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Сергей</span>
+                <span class="photo-list__time-publish">(25 часов назад)</span>
+                <p class="photo-list__description-publish">Самая кубанская в мире!</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 4</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Максим</span>
-                <span class="list__time-publish">(40 часов назад)</span>
-                <p class="list__description-publish">Где снег-то?</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 150</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-pov-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография вида с горы">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Максим</span>
+                <span class="photo-list__time-publish">(40 часов назад)</span>
+                <p class="photo-list__description-publish">Где снег-то?</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 150</span>
               </div>
             </li>
 
-            <li class="list__item">
-              <img src="http://placehold.it/150x100"  class="list__user-photo" width="320" height="137" alt="Панорамное фото с моста">
-              <div class="list__text-box">
-                <span class="list__user-name">Надежда</span>
-                <span class="list__time-publish">(45 часов назад)</span>
-                <p class="list__description-publish">Всем GM и взаимные лайки!</p>
-                <span class="list__img-heart"></span>
-                <span class="list__like">Нравится: 2560</span>
+            <li class="photo__list-item">
+              <img src="img/jpg/photo-wing-mobile@1x.jpg"  class="photo-list__user-photo" width="280" height="180" alt="Фотография крыла самолёта на фоне заката">
+              <div class="photo-list__text-box">
+                <span class="photo-list__user-name">Надежда</span>
+                <span class="photo-list__time-publish">(45 часов назад)</span>
+                <p class="photo-list__description-publish">Всем GM и взаимные лайки!</p>
+                <span class="photo-list__img-heart">
+                  <svg class="photo-list__img-heart--red" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="12" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
+                    <path fill="#000000" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
+                  </svg>
+                </span>
+                <span class="photo-list__like">Нравится: 2560</span>
               </div>
             </li>
           </ul>
@@ -127,12 +161,31 @@
           <h2 class="image-filters__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         </div>
         <div class="image-filters__wrapper">
-          <img src="http://placehold.it/150x100" class="image-filters__example" width="280" height="374" alt="Зимня дорога в лесу" >
-          <div class="image-filters__button button-example">
+          <img src="img/jpg/photo-road-mobile@1x.jpg" class="image-filters__example" width="280" height="374" alt="Зимня дорога в лесу" >
+          <div class="image__button-example">
 
-            <button class="button-example__alignment" type="button">Обрезать фото</button>
-            <button class="button-example__fill" type="button">Цвет фона</button>
-            <button class="button-example__brightness" type="button">Яркость</button>
+            <button class="image__button-example__alignment" type="button">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+              </svg>
+                <span class="visually-hidden">Обрезать фото</span>
+            </button>
+
+            <button class="image__button-example__fill" type="button">
+              <span class="visually-hidden">Цвет фона</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                <rect y="40" width="48" height="3"/>
+              </svg>
+            </button>
+
+            <button class="image__button-example__brightness" type="button">
+              <span class="visually-hidden">Яркость</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+              </svg>
+            </button>
 
             <fieldset class="image-filters__saturation">
               <legend></legend>
@@ -141,8 +194,8 @@
                 min="0" max="100">
             </fieldset>
             <p class="image-filters__button-box">
-              <button class="image-filters__send" type="submit">Запостить</button>
-              <button class="image-filters__rest" type="reset">Отмена</button>
+              <button class="image-filters__send button button--pink-send" type="submit">Запостить</button>
+              <button class="image-filters__rest button button--reset" type="reset">Отмена</button>
             </p>
           </div>
         </div>
@@ -152,24 +205,49 @@
     <footer class="photo-footer">
       <div class="photo-footer__wrapper">
         <a href="index.html" class="photo-footer__logo-link">
-          <img src="http://placehold.it/150x100" width="150" height="45" class="photo-footer__img-logo" alt="Логотип приложения pink">
+          <img src="img/svg/logo-pink-blue-mobile.svg" width="150" height="45" class="photo-footer__img-logo" alt="Логотип приложения pink">
         </a>
 
         <ul class="photo-footer__social-list">
             <li class="photo-footer__social-item">
-              <a class="photo-footer__social-link footer__social-link--twitter" href="#">Мы в Твиттере</a>
+              <a class="photo-footer__social-link" href="#">
+                <span class="visually-hidden">Мы в Твиттере</span>
+                <svg class="photo-footer__social-link--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill="#000000" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
             </li>
+
             <li class="photo-footer__social-item">
-              <a class="photo-footer__social-link footer__social-link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="photo-footer__social-link" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="photo-footer__social-link--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <path fill="#000000" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                </svg>
+              </a>
             </li>
+
             <li class="photo-footer__social-item">
-              <a class="photo-footer__social-link footer__social-link--youtube" href="#">Мы в Ютубе</a>
+              <a class="photo-footer__social-link" href="#">
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg class="photo-footer__social-link--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                  <path fill="#000000" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+                </svg>
+              </a>
             </li>
           </ul>
 
         <div class="photo-footer__copyright">
-          <p class="photo-footer__copyright-text">Разработано:</p>
-          <a class="photo-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="photo-footer__copyright-text">Разработано</p>
+          <a class="photo-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="photo-footer__copyright--academy-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29" height="38" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path fill="#000000" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
