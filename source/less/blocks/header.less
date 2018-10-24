@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   background-color: @dark-blue;
 }
 
@@ -7,6 +8,13 @@
   width: 320px;
   min-width: 320px;
   padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.page-header__action-list-box {
+  margin: 0 auto;
+  width: 320px;
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -22,29 +30,18 @@
   text-align: center;
 }
 
-/*как сделать позрачный фон*/
-
 .page-header__logo-box {
+  min-width: 280px;
   position: absolute;
-  width: 620px;
-  background-color: #000000;
-  opacity: 0.3;
-  z-index: 2;
-}
-
-.page-header__logo-box--flex {
-  display: flex;
-  justify-content: space-between;
   padding: 19px 20px;
-  opacity: 1;
-}
-
-.page-header__logo-link {
-  position: relative;
+  background-color: rgba(14, 15, 14, 0.308);
   z-index: 3;
-  opacity: 1;
 }
 
+.page-header__logo-link2,
+.page-header__logo-link3 {
+  display: none;
+}
 /*Переделать под мобильную версию*/
 
 .page-nav__list {
@@ -71,6 +68,12 @@
 
 .page-header__toggle {
   border: none;
+  margin-left: 59px;
+}
+
+.page-header__img-box2,
+.page-header__img-box3 {
+  display: none;
 }
 
 .page-header__image-hand {
@@ -130,19 +133,91 @@
 }
 
 @media (min-width: 660px) {
+  .page-header {
+    position: relative;
+  }
+
   .page-header-wrapper {
     margin: 0 auto;
     width: 660px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
     box-sizing: border-box;
   }
 
-  .page-header__image-bg {
-    width: 100%;
-    max-width: 660px;
-    max-height: 730px;
+  .page-header__logo-box {
+    position: absolute;
+    width: 660px;
+    padding-top: 26px;
+    padding-bottom: 43px;
+    background-color: rgba(14, 15, 14, 0.308);
+    z-index: 3;
+    box-sizing: border-box;
+  }
+
+  /*Скрываем лого мобильной версии*/
+  .page-header__logo-link {
+    display: none;
+  }
+
+  .page-header__logo-link2 {
+    display: block;
+  }
+
+  .page-header__toggle {
+    border: none;
+    margin-left: 200px;
+  }
+
+  /*Скрываем картинку в шапке от мобильной версии*/
+  .page-header__img-box {
+    display: none;
+  }
+
+  .page-header__img-box2 {
+    display: block;
+    position: relative;
+  }
+
+  .page-header__image-bg2 {
+    height: 730px;
+    width: 1200px;
+  }
+
+  .page-header__image-hand2 {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 887px;
+    height: 545px;
+  }
+
+  .page-header__title-tablet {
+    font-size: 40px;
+    font-weight: @light-font-weight;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 39px;
+    text-align: center;
+  }
+
+  .page-list__description {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .page-list__platform {
+    justify-content: space-around;
+  }
+
+  /*Позиционируем сам блок где кнопки*/
+  .page-header__action-list-box {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 300px;
+    padding-right: 0;
   }
 }
