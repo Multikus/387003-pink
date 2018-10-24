@@ -7,7 +7,7 @@
   margin: 0 auto;
   width: 320px;
   min-width: 320px;
-  padding-top: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -21,9 +21,14 @@
   box-sizing: border-box;
 }
 
+.page-header__title-tablet {
+  display: none;
+}
+
 .page-header__img-box {
-  position: relative;
+  margin: 0;
   margin-bottom: 35px;
+  width: auto;
 }
 
 .page-nav__item {
@@ -38,10 +43,6 @@
   z-index: 3;
 }
 
-.page-header__logo-link2,
-.page-header__logo-link3 {
-  display: none;
-}
 /*Переделать под мобильную версию*/
 
 .page-nav__list {
@@ -68,18 +69,7 @@
 
 .page-header__toggle {
   border: none;
-  margin-left: 59px;
-}
-
-.page-header__img-box2,
-.page-header__img-box3 {
-  display: none;
-}
-
-.page-header__image-hand {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  margin-left: 10px;
 }
 
 .page-header__download-button {
@@ -132,92 +122,38 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
-  .page-header {
-    position: relative;
-  }
-
-  .page-header-wrapper {
-    margin: 0 auto;
-    width: 660px;
-    box-sizing: border-box;
-  }
-
-  .page-header__logo-box {
-    position: absolute;
-    width: 660px;
-    padding-top: 26px;
-    padding-bottom: 43px;
-    background-color: rgba(14, 15, 14, 0.308);
-    z-index: 3;
-    box-sizing: border-box;
-  }
-
-  /*Скрываем лого мобильной версии*/
-  .page-header__logo-link {
-    display: none;
-  }
-
-  .page-header__logo-link2 {
-    display: block;
-  }
-
-  .page-header__toggle {
-    border: none;
-    margin-left: 200px;
-  }
-
-  /*Скрываем картинку в шапке от мобильной версии*/
-  .page-header__img-box {
-    display: none;
-  }
-
-  .page-header__img-box2 {
-    display: block;
-    position: relative;
-  }
-
-  .page-header__image-bg2 {
-    height: 730px;
-    width: 1200px;
-  }
-
-  .page-header__image-hand2 {
-    position: absolute;
-    left: 10px;
-    bottom: 0;
-    width: 887px;
-    height: 545px;
-  }
-
+@media (min-width: @tablet-width) {
   .page-header__title-tablet {
+    display: block;
+    color: #ffffff;
     font-size: 40px;
     font-weight: @light-font-weight;
-    color: #ffffff;
     margin: 0;
-    padding: 0;
-    padding-left: 37px;
-    padding-right: 37px;
-    padding-bottom: 39px;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
   }
 
-  .page-list__description {
-    font-size: 18px;
+  .page-header-wrapper {
+    width: @tablet-width;
+  }
+
+  .page-header__logo-box {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: @tablet-width;
+  }
+
+  .page-header__action-list-box {
     margin: 0;
-    margin-top: 40px;
+    padding-top: 211px;
+    padding-left: 20px;
+    padding-bottom: 113px;
   }
 
   .page-list__platform {
     justify-content: space-around;
-  }
-
-  /*Позиционируем сам блок где кнопки*/
-  .page-header__action-list-box {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 300px;
-    padding-right: 0;
   }
 }
