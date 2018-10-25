@@ -17,3 +17,38 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .review {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .review__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: @bold-font-weight;
+    margin: 0;
+    order: 2;
+  }
+
+  .review__profession {
+    font-size: 14px;
+    line-height: 30px;
+    color: @dark-blue;
+    text-align: center;
+    order: 3;
+  }
+
+  .review__item {
+    font-size: 18px;
+    line-height: 30px;
+    color: @dark-blue;
+    padding-bottom: 34px;
+  }
+
+  .review-slider {
+    order: 4;
+  }
+}

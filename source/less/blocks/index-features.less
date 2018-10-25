@@ -15,6 +15,7 @@
 }
 
 .features__item-title {
+  margin: 0;
   text-align: center;
   font-size: 18px;
   line-height: 10px;
@@ -26,9 +27,50 @@
   text-align: center;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
 .features__box-img {
   margin-left: 25%;
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    margin: 0;
+  }
+
+  .features__flexbox {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-right: 20px;
+    width: @tablet-width;
+    background-color: #f2f2f2;
+  }
+
+  .features__box-img {
+    margin: 0;
+    margin-right: 35px;
+    min-width: 268px;
+    min-height: 558px;
+  }
+
+  .features__list {
+    order: 2;
+  }
+
+  .features__item-title {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .features__item-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .features__item-description {
+    text-align: left;
+  }
 }
