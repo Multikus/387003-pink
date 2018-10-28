@@ -7,7 +7,6 @@
   margin: 0 auto;
   width: 320px;
   min-width: 320px;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -15,8 +14,7 @@
   margin: 0 auto;
   width: 320px;
   min-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   margin-bottom: 20px;
   box-sizing: border-box;
 }
@@ -35,9 +33,16 @@
   text-align: center;
 }
 
+.page-header__menu-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo-box {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
   min-width: 280px;
-  position: absolute;
   padding: 19px 20px;
   background-color: rgba(14, 15, 14, 0.308);
   z-index: 3;
@@ -46,7 +51,7 @@
 /*Переделать под мобильную версию*/
 
 .page-nav__list {
-  display: none;
+  /*display: none;*/
   list-style: none;
   margin: 0;
   padding: 0;
@@ -69,7 +74,6 @@
 
 .page-header__toggle {
   border: none;
-  margin-left: 10px;
 }
 
 .page-header__download-button {
@@ -143,7 +147,6 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    width: @tablet-width;
   }
 
   .page-header__action-list-box {
@@ -155,5 +158,33 @@
 
   .page-list__platform {
     justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: @desktop-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .page-header__logo-box {
+    min-width: auto;
+  }
+
+  .page-nav__list {
+    display: flex;
+    width: auto;
+  }
+
+  .page-header-wrapper {
+    width: @desktop-width;
   }
 }

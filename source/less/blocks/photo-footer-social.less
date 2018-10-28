@@ -1,3 +1,7 @@
+.photo-footer__mobile-hidden {
+  display: none;
+}
+
 .photo-footer__wrapper {
   margin: 0 auto;
   width: 320px;
@@ -42,4 +46,16 @@
 
 .photo-footer__copyright--academy-logo path {
   fill: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-footer__mobile-hidden {
+    display: flex;
+  }
+
+  .photo-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+  }
 }
