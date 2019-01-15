@@ -1,0 +1,107 @@
+.form-text__label {
+  color: $pink;
+  padding-left: 23px;
+  text-transform: uppercase;
+}
+
+.form-text__input {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 20px;
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid $grey;
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    &--contacts {
+      position: relative;
+      flex-direction: column-reverse;
+      margin-bottom: 20px;
+
+      &:first-child {
+        &::after {
+          content: "";
+          width: 61px;
+          height: 61px;
+          top: 10px;
+          right: 0;
+          position: absolute;
+          background: url("../img/icon-phone.svg") no-repeat center center;
+          background-color: $grey;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          content: "";
+          width: 61px;
+          height: 61px;
+          top: 10px;
+          right: 0;
+          position: absolute;
+          background: url("../img/icon-mail.svg") no-repeat center center;
+          background-color: $grey;
+        }
+      }
+    }
+  }
+
+  .form-text__label {
+    padding: 0;
+    padding-right: 20px;
+
+    &--contacts {
+      margin-top: 14px;
+      padding-left: 21px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-text {
+    margin-bottom: 32px;
+
+    &--contacts {
+      width: 375px;
+      margin-bottom: 0;
+
+      &:first-child,
+      &:last-child {
+        &::after {
+          top: 22px;
+        }
+      }
+    }
+  }
+
+  .form-text__input {
+    margin-top: 21px;
+  }
+}

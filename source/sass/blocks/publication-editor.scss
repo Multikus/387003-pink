@@ -1,0 +1,362 @@
+.publication-editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-editor__form {
+  padding: 20px 0 33px;
+  background-color: $light-grey;
+}
+
+.publication-editor__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.publication-editor__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  padding-bottom: 107px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 120px;
+    width: 320px;
+    height: 1px;
+    background: rgba($dark-blue, 0.1);
+  }
+}
+
+.publication-editor__button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: $dark-blue-opacity;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: rgba($dark-blue, 0.5);
+  }
+
+  &:active {
+    fill: $pink;
+  }
+
+  &--checked {
+    fill: $pink;
+
+    & + .publication-editor__button--range {
+      display: block;
+      position: absolute;
+      width: 240px;
+      height: 65px;
+    }
+  }
+
+  &--crop {
+    padding-left: 14px;
+  }
+
+  &--contrast {
+    padding-right: 15px;
+  }
+}
+
+.publication-editor__button--range {
+  display: none;
+  appearance: none; /*-webkit не пропускает линтер*/
+  /*-webkit-appearance: none;  Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  height: 55px;
+  background: transparent; /* Otherwise white in Chrome */
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none; /*-webkit не пропускает линтер*/
+    /*-webkit-appearance: none;*/
+    border: 2px solid $pink;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: $light-grey;
+    cursor: pointer;
+    margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: $pink;
+  }
+
+  /* All the same stuff for Firefox */
+  &::-moz-range-thumb {
+    border: 2px solid $pink;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    background: $light-grey;
+    cursor: pointer;
+  }
+
+  /* All the same stuff for IE */
+  &::-ms-thumb {
+    border: 2px solid $pink;
+    height: 14px;
+    width: 16px;
+    background: $light-grey;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-blue;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $dark-blue;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $dark-blue;
+  }
+}
+
+.publication-editor__example {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .publication-editor__form {
+    padding: 48px 0 55px;
+  }
+
+  .publication-editor__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .publication-editor__example {
+    margin: 0;
+    margin-top: 7px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .publication-editor__tooling {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 275px;
+  }
+
+  .publication-editor__list {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .publication-editor__setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 64px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba($dark-blue, 0.1);
+
+    &:first-child {
+      border-color: $dark-blue;
+    }
+  }
+
+  .publication-editor__button {
+    fill: $pink;
+
+    &--crop {
+      padding: 0 23px 5px 0;
+
+      .publication-editor__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--fill {
+      padding-right: 20px;
+      padding-top: 5px;
+
+      .publication-editor__icon {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      padding-right: 20px;
+      padding-bottom: 5px;
+
+      .publication-editor__icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &--checked {
+      & + .publication-editor__button--range {
+        position: inherit;
+        width: 202px;
+        height: 65px;
+      }
+    }
+
+    &--range {
+      position: inherit;
+      width: 202px;
+      margin-right: 18px;
+
+      &:nth-child(2n),
+      &:nth-child(3n) {
+        display: block;
+      }
+    }
+  }
+
+  .publication-editor__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 275px;
+    padding-right: 15px;
+    height: 133px;
+    margin: 0;
+  }
+
+  .publication-editor__upload-button,
+  .publication-editor__cancel-button {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .publication-editor__form {
+    background: none;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .publication-editor__wrap {
+    width: 940px;
+    padding: 50px 60px 56px 80px;
+    background-color: $light-grey;
+  }
+
+  .publication-editor__example {
+    width: 300px;
+    height: 400px;
+  }
+
+  .publication-editor__tooling {
+    width: 410px;
+  }
+
+
+  .publication-editor__setting-item {
+    margin-bottom: 7px;
+
+    &:first-child {
+      border-color: rgba($dark-blue, 0.1);
+    }
+  }
+
+  .publication-editor__buttons {
+    width: 410px;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  .publication-editor__button {
+    fill: $pink;
+
+    &--crop {
+      padding: 0;
+
+      .publication-editor__icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &--fill {
+      .publication-editor__icon {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      padding: 0;
+
+      .publication-editor__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &--checked {
+      & + .publication-editor__button--range {
+        width: 288px;
+        height: 55px;
+      }
+    }
+
+    &--range {
+      width: 288px;
+      margin-right: 30px;
+      padding-bottom: 0;
+    }
+  }
+
+  .publication-editor__upload-button,
+  .publication-editor__cancel-button {
+    width: 185px;
+    font-size: 18px;
+  }
+}

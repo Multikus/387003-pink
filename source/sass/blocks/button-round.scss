@@ -1,0 +1,68 @@
+.button-round {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 25px;
+  background-color: transparent;
+
+  &--white {
+    color: $white;
+    border: 3px solid $white;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $pink;
+    }
+
+    &:active {
+      background-color: $white;
+      color: $pink-opacity;
+    }
+  }
+
+  &--pink {
+    color: $pink;
+    border: 3px solid $pink;
+    margin-bottom: 13px;
+
+    &:hover,
+    &:focus {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: $white-opacity;
+    }
+  }
+
+  &--grey {
+    color: rgba(40, 54, 69, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $dark-blue-opacity;
+      border-color: $dark-blue-opacity;
+    }
+
+    &:active {
+      color: $white-opacity;
+      border-color: $dark-grey;
+      background-color: $dark-grey;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-round {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,268 @@
+.publication {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &--panorama {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.publication__photo {
+  display: block;
+  width: 100%;
+
+  &--panorama {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.publication__photo-img {
+  display: block;
+}
+
+.publication__photo-category {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  padding-top: 5px;
+  background-color: $pink;
+}
+
+.publication__wrap--panorama {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.publication__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 121px;
+  padding: 0 17px 20px;
+  background-color: $light-grey;
+
+  &--panorama {
+    padding: 0 18px 20px;
+    margin: 0;
+  }
+}
+
+.publication__title {
+  padding-top: 17px;
+}
+
+.publication__author {
+  font-weight: 700;
+}
+
+.publication__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.publication__text {
+  @include indentation-reset;
+  margin-bottom: 10px;
+}
+
+.publication__active {
+  display: flex;
+  align-items: center;
+}
+
+.publication__active-likes {
+  display: block;
+  padding-left: 18px;
+  color: $pink;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.publication__button {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  background: url("../img/icon-heart.svg") no-repeat center center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .publication {
+    width: 300px;
+    min-height: 455px;
+
+    &--panorama {
+      width: 660px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .publication__wrap {
+    &--panorama {
+      width: 620px;
+    }
+  }
+
+  .publication__content {
+    min-height: 155px;
+    padding: 6px 32px 23px 27px;
+    justify-content: space-between;
+
+    &--panorama {
+      min-height: 120px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 7px 28px 15px;
+    }
+  }
+
+  .publication-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin-bottom: 46px;
+  }
+
+  .publication__photo {
+    height: 300px;
+
+    &--panorama {
+      height: 509px;
+
+      .publication__photo-img {
+        width: auto;
+        height: 509px;
+      }
+    }
+  }
+
+  .publication__photo-category {
+    top: 58px;
+  }
+
+  .publication__active {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &--panorama {
+      width: 150px;
+    }
+  }
+
+  .publication__active-likes {
+    padding-left: 0;
+
+    &--panorama {
+      padding-left: 30px;
+      align-self: flex-end;
+    }
+  }
+
+  .publication__button--panorama {
+    padding-top: 7px;
+  }
+
+  .publication__text-wrap--panorama {
+    order: 1;
+    width: 580px;
+  }
+
+  .publication__title--panorama {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .publication {
+    min-height: 555px;
+    margin-bottom: 52px;
+
+    &--panorama {
+      width: 960px;
+    }
+  }
+
+  .publication__wrap {
+    &--panorama {
+      width: 940px;
+    }
+  }
+
+  .publication-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin-bottom: 8px;
+  }
+
+  .publication__photo {
+    height: 400px;
+
+    &--panorama {
+      height: 506px;
+
+      .publication__photo-img {
+        width: auto;
+        height: 506px;
+      }
+    }
+  }
+
+  .publication__photo-category {
+    top: 55px;
+    right: 10px;
+  }
+
+  .publication__content {
+    min-height: 155px;
+    padding: 6px 32px 23px 27px;
+    justify-content: space-between;
+
+    &--panorama {
+      min-height: 96px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .publication__active {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &--panorama {
+      width: 150px;
+    }
+  }
+
+  .publication__text-wrap--panorama {
+    width: 100%;
+  }
+
+  .publication__title--panorama {
+    width: 300px;
+  }
+}

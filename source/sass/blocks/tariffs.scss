@@ -1,0 +1,41 @@
+.tariffs {
+  padding: 87px 0 46px;
+  background: url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: contain;
+  background-color: $light-grey;
+}
+
+.tariffs__slider {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+
+  .tariffs__wrap {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .tariffs__slider {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+
+
+  .tariffs__wrap {
+    width: 940px;
+  }
+}
