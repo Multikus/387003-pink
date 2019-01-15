@@ -1,0 +1,286 @@
+.form-field {
+  @include indentation-reset;
+  border: none;
+  margin-bottom: 30px;
+
+  &--name,
+  &--contacts,
+  &--emotions {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &--contacts,
+  &--name {
+    margin-bottom: 26px;
+  }
+
+  &--apps {
+    margin-bottom: 0;
+  }
+
+  &--emotions {
+    margin-bottom: 42px;
+  }
+
+  &--apps,
+  &--achievements {
+    padding: 0 20px;
+    background-color: $light-grey;
+  }
+
+  &--wrap {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-field__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-field__item {
+  margin-bottom: 17px;
+}
+
+
+.form-field__title {
+  display: block;
+  padding: 0 26px;
+  margin: 36px 0 43px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--contacts {
+    display: none;
+  }
+
+  &--emotions {
+    margin-bottom: 16px;
+  }
+}
+
+.form-field__textarea {
+  width: 100%;
+  padding: 13px 18px 5px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $grey;
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+}
+
+.form-field__button-notice {
+  @include indentation-reset;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--add {
+    display: none;
+  }
+}
+
+.form-field__button-symbol {
+  color: $pink;
+}
+
+.form-field__button {
+  width: 280px;
+  margin-bottom: 35px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-field {
+    position: relative;
+
+    &--name {
+      width: 620px;
+      margin-bottom: 25px;
+      order: -3;
+    }
+
+    &--achievements,
+    &--contacts,
+    &--apps,
+    &--emotions {
+      width: 620px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      padding: 50px 60px;
+      border: 2px solid $grey;
+      background-color: transparent;
+    }
+
+    &--achievements {
+      padding: 55px 60px 0;
+      margin-bottom: 67px;
+    }
+
+    &--apps {
+      order: -2;
+      padding-top: 55px;
+      padding-bottom: 15px;
+      margin-bottom: 64px;
+    }
+
+    &--contacts {
+      order: -1;
+      padding: 33px 56px 10px;
+      margin-bottom: 65px;
+    }
+
+    &--emotions {
+      padding: 45px 59px 40px;
+      margin-bottom: 68px;
+    }
+
+    &--wrap {
+      width: 620px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .form-field__item {
+    margin-bottom: 41px;
+  }
+
+
+  .form-field__title {
+    position: absolute;
+    width: auto;
+    top: -10px;
+    left: 123px;
+    padding: 0 26px;
+    margin: 0;
+    background-color: $white;
+
+    &--contacts {
+      left: 183px;
+      display: block;
+    }
+
+    &--emotions {
+      left: 190px;
+    }
+
+    &--achievements {
+      left: 95px;
+    }
+  }
+
+  .form-field__list {
+    width: auto;
+  }
+
+  .form-field__textarea {
+    padding-bottom: 0;
+  }
+
+  .form-field__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field {
+    width: 940px;
+    margin-left: 0;
+    margin-right: 0;
+
+    &--name {
+      width: 435px;
+    }
+
+    &--apps {
+      width: 435px;
+      margin-top: 15px;
+      padding: 60px 30px 12px;
+    }
+
+    &--contacts {
+      padding: 19px 58px 18px;
+    }
+
+    &--emotions {
+      padding: 43px 58px 40px;
+      margin-bottom: 64px;
+    }
+
+    &--achievements {
+      padding: 58px 3px 6px 63px;
+      margin-bottom: 64px;
+    }
+  }
+
+  .form-field__title {
+    &--apps {
+      left: 30px;
+      width: 370px;
+    }
+
+    &--contacts {
+      left: 343px;
+    }
+
+    &--emotions {
+      left: 350px;
+    }
+
+    &--achievements {
+      left: 255px;
+    }
+  }
+
+
+  .form-field__list {
+    &--apps {
+      padding-left: 46px;
+    }
+
+    &--contacts,
+    &--achievements {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .form-field__button-notice {
+    &--add {
+      display: inline-block;
+    }
+  }
+
+  .form-field__textarea {
+    height: 125px;
+  }
+
+  .form-field__button {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,107 @@
+.downloads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding: 29px 0 14px;
+  min-height: 268px;
+  background-color: $dark-blue;
+}
+
+.downloads__lead {
+  display: none;
+}
+
+.downloads__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 16px;
+  width: 206px;
+  height: 60px;
+  align-self: center;
+}
+
+.downloads__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  cursor: pointer;
+
+  &--apple {
+    background: url("../img/logo-apple.svg") no-repeat 100% 100%;
+    background-size: 47px 56px;
+  }
+
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat 100% 100%;
+    background-size: 43px 47px;
+  }
+
+  &--microsoft {
+    background: url("../img/logo-microsoft.svg") no-repeat 100% 100%;
+    background-size: 44px 41px;
+  }
+}
+
+.downloads__describing {
+  color: $white;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .downloads {
+    position: absolute;
+    width: 300px;
+    padding: 90px 0;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .downloads__lead {
+    display: block;
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0 50px;
+    color: $white;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .downloads__list {
+    margin-top: 35px;
+  }
+
+  .downloads__describing {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .downloads {
+    padding: 110px 0 103px;
+  }
+
+  .downloads__lead {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .downloads__list {
+    margin-top: 57px;
+  }
+
+  .downloads__describing {
+    margin-top: 53px;
+  }
+}

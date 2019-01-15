@@ -1,0 +1,112 @@
+@media (min-width: $mobile-width) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    background-color: $white;
+    margin-bottom: 26px;
+  }
+
+  .effect__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 0 auto;
+    background: url("../img/icon-editor-diagram-fill.svg") no-repeat 4% 69%, url("../img/icon-timer.svg") no-repeat left 65%;
+    background-size: 202px 202px, 238px 276px;
+  }
+
+  .effect__description {
+    padding: 95px 2px 60px 0;
+    width: 310px;
+    text-align: left;
+  }
+
+  .effect__time {
+    @include indentation-reset;
+    display: block;
+    width: 110px;
+    height: 150px;
+    margin-left: 64px;
+    margin-top: 137px;
+    font-size: 96px;
+    line-height: 149.47px;
+    font-weight: 700;
+    color: $pink;
+  }
+
+  .effect__title {
+    @include indentation-reset;
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  .effect__text {
+    @include indentation-reset;
+    margin-bottom: 10px;
+  }
+
+  .effect__link {
+    color: $pink;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $light-grey;
+  }
+
+  .effect__wrap {
+    width: 940px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 3% 53%, left 32%;
+  }
+
+  .effect__description {
+    width: 575px;
+    padding: 125px 0 115px;
+  }
+
+  .effect__time {
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 130px;
+    font-size: 120px;
+    line-height: 186.84px;
+    border-radius: 130px;
+  }
+
+  .effect__title {
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .effect__title br {
+    display: none;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 55px;
+    margin-bottom: 32px;
+  }
+
+  .effect__text br {
+    display: none;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

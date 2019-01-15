@@ -1,0 +1,160 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $white;
+  width: 100%;
+  background-color: $dark-blue;
+}
+
+@media (min-width: 320px) and (max-width: 959px) {
+  .main-nav__switch {
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    top: -50px;
+    right: 5px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 30px;
+  }
+
+  .main-nav__switch-open,
+  .main-nav__switch-close {
+    fill: $white;
+
+    &:hover,
+    &:focus {
+      fill: $pink;
+    }
+
+    &:active {
+      fill: $pink-opacity;
+    }
+  }
+
+  .main-nav__switch-open {
+    display: none;
+  }
+
+  .main-nav--closed {
+    .main-nav__switch {
+      display: block;
+    }
+
+    .main-nav__switch-open {
+      display: block;
+    }
+
+    .main-nav__switch-close {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: none;
+    }
+  }
+
+  .main-nav--nojs {
+    .main-nav__switch {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: block;
+    }
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  text-align: center;
+}
+
+.main-nav__item {
+  border-top: 1px solid $white-opacity;
+  border-bottom: 1px solid $black;
+  width: auto;
+  height: 64px;
+  padding: 15px 0;
+
+  .main-nav__link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $white;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+
+    &--active {
+      color: $white-opacity;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__switch {
+    top: -70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__switch {
+    display: none;
+  }
+
+  .main-nav {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    width: 620px;
+    margin-left: auto;
+    height: 110px;
+    color: $white;
+    background-color: transparent;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    width: auto;
+    border: none;
+    padding: 45px 0;
+
+    .main-nav__link {
+      position: relative;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      color: $white;
+      text-transform: none;
+
+      &:hover,
+      &:focus {
+        color: $pink;
+      }
+
+      &--active {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
